@@ -4,7 +4,7 @@
 
 - fix: Allow audit to handle fields where there is no `default` attribute. ([#404](https://github.com/jazzband/django-auditlog/pull/404))
 
-## 2.1.2 ()
+## 2.1.2 (TEST)
 
 
 #### Fixes
