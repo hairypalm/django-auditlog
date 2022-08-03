@@ -261,6 +261,18 @@ class JSONModel(models.Model):
 
     history = AuditlogHistoryField(delete_related=False)
 
+class OneToOneFieldModel(models.Model):
+    """
+    A model with a OneToOne Field that does not have a default attribute.
+    Used to test fix for handling fields without default.
+    """
+
+    related = models.OneToOneField("OneToOneFieldModel", null=True, on_delete=models.SET_NULL)
+
+    history = AuditlogHistoryField()
+
+
+
 
 auditlog.register(AltPrimaryKeyModel)
 auditlog.register(UUIDPrimaryKeyModel)

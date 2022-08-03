@@ -2,6 +2,13 @@
 
 #### Fixes
 
+- fix: Allow audit to handle fields where there is no `default` attribute. ([#404](https://github.com/jazzband/django-auditlog/pull/404))
+
+## 2.1.2 ()
+
+
+#### Fixes
+
 - fix: Display `created` timestamp in server timezone ([#404](https://github.com/jazzband/django-auditlog/pull/404))
 
 ## 2.1.1 (2022-07-27)
